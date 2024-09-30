@@ -10,8 +10,9 @@ document.addEventListener(
         if (itemClicked.dataset.type === "celebrity") {
 
             const celebSport = itemClicked.dataset.sport
+            const celebName = itemClicked.dataset.name
 
-                window.alert(`${celebSport}`)
+                window.alert(`${celebName}'s sport is ${celebSport}`)
             
         }
     }
@@ -25,8 +26,8 @@ export const Celebrities = () => {
                     data-id="${star.id}" 
                     data-type="celebrity"
                     data-sport="${star.sport}"
-                    id="star--${star.id}">
-                    ${star.name}
+                    data-name="${star.name}"
+                    >${star.name}
                 </li>`
     }
 

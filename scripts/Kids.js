@@ -10,8 +10,9 @@ document.addEventListener(
         if (itemClicked.dataset.type === "child") {
 
             const childWish = itemClicked.dataset.wish
+            const childName = itemClicked.dataset.name
 
-                window.alert(`${childWish}`)
+                window.alert(`${childName}'s wish is ${childWish}`)
             
         }
     }
@@ -26,6 +27,7 @@ export const Kids = () => {
         data-id="${child.id}" 
         data-type="child" 
         data-wish="${child.wish}"
+        data-name="${child.name}"
         >${child.name}</li>`
     }
 

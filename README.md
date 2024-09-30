@@ -35,10 +35,13 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   > The module that contains the code is Kids.js. The algorithm is first deciding what item was clicked and comparing it's data-type to the string "child." When this is true, a name and a wish are accessed using it's dataset and the window alert appeared with its information.
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > The find `findCelebrityMatch()` function is invoked inside the for..of loop to be sure that the matching information is displayed between the kids, celebrity, sport, and wish.
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   > The name of the sport that the celebrity plays can be displayed by accessing the assigned dataset or accessing the property '.sport' from the database(structed clone that is imported).
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   > Line 5 selects an element with the id "element" using a query selector. it is then assigned to the varible "mainContainer".
+   Line 7 is a series of html syntax including invocations of the kids, clebrities, and pairings functions defining "applicationHTML".
+   Line 26 then sets the inner html of the container element to be equal to applicationHTML thus registering it our html to the DOM.
+
