@@ -2,6 +2,21 @@ import { getCelebrities } from "./database.js"
 
 const celebrities = getCelebrities
 
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const itemClicked = clickEvent.target
+
+        if (itemClicked.dataset.type === "celebrity") {
+
+            const celebSport = itemClicked.dataset.sport
+
+                window.alert(`${celebSport}`)
+            
+        }
+    }
+)
+
 export const Celebrities = () => {
     let html = "<ol>"
 
